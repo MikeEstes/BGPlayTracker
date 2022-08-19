@@ -1,0 +1,41 @@
+{
+  "name": "bgplaytracker",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.json --cache --cache-strategy content"
+  },
+  "dependencies": {
+    "react": "18.0.0",
+    "react-native": "0.69.4",
+    "react-native-elements": "^3.4.2",
+    "recoil": "^0.7.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^26.6.3",
+    "eslint": "*",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react-native-a11y":"^3.2.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "eslint-plugin-typescript-sort-keys": "^2.1.0",
+    "jest": "*",
+    "metro-react-native-babel-preset": "^0.70.3",
+    "react-test-renderer": "18.0.0",
+    "typescript": "*"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
