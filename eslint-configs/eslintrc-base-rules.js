@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     'eslint:recommended',
-    'plugin:jsonc/recommended-with-jsonc'
+    //'plugin:jsonc/recommended-with-jsonc'
   ],
   globals: {
     JSX: 'readonly',
@@ -17,5 +17,5 @@ module.exports = {
       },
     },
   ],
-  
+
 };

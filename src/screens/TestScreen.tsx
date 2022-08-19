@@ -1,10 +1,12 @@
 import React from 'react';
-import { Button, Text, View } from 'react-native';
+import { Text, Button, View } from 'react-native';
 
-const TestScreen = () => {
+const TestScreen: React.FC = () => {
+  const message = 'Heeey!';
+
   return (
     <View>
-      <Text>Heey!</Text>
+      <Text>{message}</Text>
       <Button title={'Push Me'} />
     </View>
   );
