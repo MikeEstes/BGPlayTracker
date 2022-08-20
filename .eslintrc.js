@@ -66,6 +66,7 @@ module.exports = {
         arrowParens: 'always',
         bracketSameLine: false,
         bracketSpacing: true,
+        endOfLine: 'auto',
         singleQuote: true,
         trailingComa: 'all',
       },
