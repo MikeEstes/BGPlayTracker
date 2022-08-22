@@ -14,23 +14,28 @@ import { IBoardGame } from 'src/common/types';
 const TestScreen: React.FC = () => {
   const [searchTerm, setsearchTerm] = useState('');
   const [data, setData] = useState<IBoardGame[]>([]);
+  const [loading, setLoading] = useState(false);
 
   return (
     <View style={styles.container}>
       <TextInput
+        placeholder={'Search for a game'}
         value={searchTerm}
         onChangeText={(newText) => setsearchTerm(newText)}
       />
       <Button
         disabled={searchTerm === ''}
         title={'Search'}
-        onPress={async () => {
+        /* onPress={async () => {
           const result = await search(searchTerm);
+          setData(result);
+        } */
+        onPress={() => {
           setData(result);
         }}
       />
       <ScrollView style={styles.resultContainer}>
-        {data.map((boardgame) => {
+        {/* {data.map((boardgame) => {
           return (
             <View
               key={boardgame.name + boardgame.yearpublished}
@@ -40,7 +45,7 @@ const TestScreen: React.FC = () => {
               <Text>{boardgame.yearpublished}</Text>
             </View>
           );
-        })}
+        })} */}
       </ScrollView>
     </View>
   );

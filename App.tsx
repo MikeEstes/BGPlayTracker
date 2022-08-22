@@ -1,15 +1,21 @@
 import React from 'react';
 
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Toast from 'react-native-toast-message';
 import { RecoilRoot } from 'recoil';
 
-import TestScreen from 'src/screens/TestScreen';
+import AuthContainer from 'src/navigation/RootNavigator';
 
 const App: React.FC = () => {
   return (
     <RecoilRoot>
-      <TestScreen />
-      <Toast />
+      <SafeAreaProvider>
+        <NavigationContainer>
+          <AuthContainer />
+        </NavigationContainer>
+        <Toast />
+      </SafeAreaProvider>
     </RecoilRoot>
   );
 };
