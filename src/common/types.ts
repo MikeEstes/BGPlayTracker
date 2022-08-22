@@ -1,6 +1,9 @@
 export interface IBoardGame {
+  id: number;
   name: string;
-  yearpublished: string;
+  playTime: number;
+  rating: string;
+  yearPublished: number;
 }
 
 export interface IBoardGameSearchResponse {

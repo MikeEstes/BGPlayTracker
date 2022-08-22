@@ -15,6 +15,6 @@ android/**/*.js
 ios/**/*.json
 
 # Sample Data
-utils/bgg_dataset.json
+src/utils/boardGameData.ts
 
 node_modules/**
