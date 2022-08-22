@@ -14,4 +14,7 @@ android/**/*.json
 android/**/*.js
 ios/**/*.json
 
+# Sample Data
+utils/bgg_dataset.json
+
 node_modules/**
